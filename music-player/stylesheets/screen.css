@@ -1,0 +1,235 @@
+/* line 9, ../sass/screen.scss */
+*, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 14, ../sass/screen.scss */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #eee;
+  color: #333;
+}
+
+/* line 20, ../sass/screen.scss */
+a, a:visited, a:active {
+  color: #880000;
+}
+
+/* line 24, ../sass/screen.scss */
+a {
+  text-decoration: none;
+  border-bottom: 1px dashed #990000;
+}
+/* line 27, ../sass/screen.scss */
+a:hover {
+  color: #005500;
+  border-bottom: none;
+}
+
+/* line 33, ../sass/screen.scss */
+.content {
+  width: 800px;
+  margin: 3em auto;
+  text-align: center;
+}
+
+/* line 39, ../sass/screen.scss */
+.music-player {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  text-shadow: 0 1px 0 white;
+  font-weight: bold;
+}
+
+/* line 47, ../sass/screen.scss */
+.mp-player-control {
+  display: inline-block;
+  vertical-align: center;
+  background-color: #ddd;
+  -moz-box-shadow: 0 -2px 4px #555555, 0 3px 2px #555555, 3px 0 4px #555555, -3px 0 4px #555555, 0 5px 1px white, inset 0 -3px 10px #777777;
+  -webkit-box-shadow: 0 -2px 4px #555555, 0 3px 2px #555555, 3px 0 4px #555555, -3px 0 4px #555555, 0 5px 1px white, inset 0 -3px 10px #777777;
+  -o-box-shadow: 0 -2px 4px #555555, 0 3px 2px #555555, 3px 0 4px #555555, -3px 0 4px #555555, 0 5px 1px white, inset 0 -3px 10px #777777;
+  box-shadow: 0 -2px 4px #555555, 0 3px 2px #555555, 3px 0 4px #555555, -3px 0 4px #555555, 0 5px 1px white, inset 0 -3px 10px #777777;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(50%, #cccccc), color-stop(100%, #aaaaaa));
+  background: -webkit-linear-gradient(top, #eeeeee, #cccccc, #aaaaaa);
+  background: -moz-linear-gradient(top, #eeeeee, #cccccc, #aaaaaa);
+  background: -o-linear-gradient(top, #eeeeee, #cccccc, #aaaaaa);
+  background: linear-gradient(top, #eeeeee, #cccccc, #aaaaaa);
+  cursor: pointer;
+}
+/* line 62, ../sass/screen.scss */
+.mp-player-control:hover {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dddddd), color-stop(50%, #bbbbbb), color-stop(100%, #999999));
+  background: -webkit-linear-gradient(top, #dddddd, #bbbbbb, #999999);
+  background: -moz-linear-gradient(top, #dddddd, #bbbbbb, #999999);
+  background: -o-linear-gradient(top, #dddddd, #bbbbbb, #999999);
+  background: linear-gradient(top, #dddddd, #bbbbbb, #999999);
+}
+/* line 66, ../sass/screen.scss */
+.mp-player-control:active {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #777777), color-stop(50%, #bbbbbb), color-stop(100%, #dddddd));
+  background: -webkit-linear-gradient(top, #777777, #bbbbbb, #dddddd);
+  background: -moz-linear-gradient(top, #777777, #bbbbbb, #dddddd);
+  background: -o-linear-gradient(top, #777777, #bbbbbb, #dddddd);
+  background: linear-gradient(top, #777777, #bbbbbb, #dddddd);
+  -moz-box-shadow: 0 -2px 4px #555555, 0 3px 2px #555555, 3px 0 4px #555555, -3px 0 4px #555555, 0 5px 1px white, inset 0 -3px 5px #777777;
+  -webkit-box-shadow: 0 -2px 4px #555555, 0 3px 2px #555555, 3px 0 4px #555555, -3px 0 4px #555555, 0 5px 1px white, inset 0 -3px 5px #777777;
+  -o-box-shadow: 0 -2px 4px #555555, 0 3px 2px #555555, 3px 0 4px #555555, -3px 0 4px #555555, 0 5px 1px white, inset 0 -3px 5px #777777;
+  box-shadow: 0 -2px 4px #555555, 0 3px 2px #555555, 3px 0 4px #555555, -3px 0 4px #555555, 0 5px 1px white, inset 0 -3px 5px #777777;
+}
+
+/* line 87, ../sass/screen.scss */
+.mp-fbwd, .mp-ffwd {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -khtml-border-radius: 20px;
+  border-radius: 20px;
+}
+
+/* line 91, ../sass/screen.scss */
+.mp-play {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -o-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -khtml-border-radius: 30px;
+  border-radius: 30px;
+  font-size: 30px;
+}
+
+/* line 96, ../sass/screen.scss */
+.mp-player, .mp-bar {
+  position: absolute;
+}
+
+/* line 100, ../sass/screen.scss */
+.mp-player {
+  left: 80px;
+}
+
+/* line 104, ../sass/screen.scss */
+.mp-share {
+  text-align: right;
+  margin: 10px 15px 0 0;
+  cursor: pointer;
+}
+
+/* line 110, ../sass/screen.scss */
+.mp-title {
+  font-weight: normal;
+  margin: 10px 0;
+  padding: 5px;
+  color: #b0e0e6;
+  background-color: #999;
+  text-shadow: 0 1px 0 #555555;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #666666), color-stop(100%, #999999));
+  background: -webkit-linear-gradient(top, #666666, #999999);
+  background: -moz-linear-gradient(top, #666666, #999999);
+  background: -o-linear-gradient(top, #666666, #999999);
+  background: linear-gradient(top, #666666, #999999);
+  border-top: 1px solid #555555;
+  border-bottom: 1px solid white;
+}
+
+/* line 122, ../sass/screen.scss */
+.mp-bar {
+  border: 1px solid #666666;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(50%, #cccccc), color-stop(100%, #aaaaaa));
+  background: -webkit-linear-gradient(top, #eeeeee, #cccccc, #aaaaaa);
+  background: -moz-linear-gradient(top, #eeeeee, #cccccc, #aaaaaa);
+  background: -o-linear-gradient(top, #eeeeee, #cccccc, #aaaaaa);
+  background: linear-gradient(top, #eeeeee, #cccccc, #aaaaaa);
+  -moz-box-shadow: inset -2px -1px 5px #999999, inset 2px -1px 5px #999999, 0 -1px 4px #555555, 0 1px 4px #555555, 0 4px 0 white;
+  -webkit-box-shadow: inset -2px -1px 5px #999999, inset 2px -1px 5px #999999, 0 -1px 4px #555555, 0 1px 4px #555555, 0 4px 0 white;
+  -o-box-shadow: inset -2px -1px 5px #999999, inset 2px -1px 5px #999999, 0 -1px 4px #555555, 0 1px 4px #555555, 0 4px 0 white;
+  box-shadow: inset -2px -1px 5px #999999, inset 2px -1px 5px #999999, 0 -1px 4px #555555, 0 1px 4px #555555, 0 4px 0 white;
+  width: 320px;
+  height: 96px;
+  top: 30px;
+  background-color: #ddd;
+}
+
+/* line 133, ../sass/screen.scss */
+.mp-progress-container {
+  position: relative;
+  background-color: #777;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #555555), color-stop(100%, #777777));
+  background: -webkit-linear-gradient(top, #555555, #777777);
+  background: -moz-linear-gradient(top, #555555, #777777);
+  background: -o-linear-gradient(top, #555555, #777777);
+  background: linear-gradient(top, #555555, #777777);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  width: 290px;
+  height: 10px;
+  margin: 0 15px 0 15px;
+  border-bottom: 1px solid white;
+}
+
+/* line 144, ../sass/screen.scss */
+.mp-progress-indicator {
+  position: absolute;
+  background-color: #999;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dddddd), color-stop(100%, #999999));
+  background: -webkit-linear-gradient(top, #dddddd, #999999);
+  background: -moz-linear-gradient(top, #dddddd, #999999);
+  background: -o-linear-gradient(top, #dddddd, #999999);
+  background: linear-gradient(top, #dddddd, #999999);
+  width: 40px;
+  top: 2px;
+  left: 2px;
+  height: 6px;
+}
+
+/* line 155, ../sass/screen.scss */
+.mp-progress-knob {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #fff;
+  position: absolute;
+  border: #888888 1px solid;
+  top: -4px;
+  left: 40px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #bbbbbb));
+  background: -webkit-linear-gradient(top, #ffffff, #bbbbbb);
+  background: -moz-linear-gradient(top, #ffffff, #bbbbbb);
+  background: -o-linear-gradient(top, #ffffff, #bbbbbb);
+  background: linear-gradient(top, #ffffff, #bbbbbb);
+  -moz-box-shadow: 0 1px 1px #555555, inset 0 -1px 2px #888888, inset 0 1px 2px #888888;
+  -webkit-box-shadow: 0 1px 1px #555555, inset 0 -1px 2px #888888, inset 0 1px 2px #888888;
+  -o-box-shadow: 0 1px 1px #555555, inset 0 -1px 2px #888888, inset 0 1px 2px #888888;
+  box-shadow: 0 1px 1px #555555, inset 0 -1px 2px #888888, inset 0 1px 2px #888888;
+}

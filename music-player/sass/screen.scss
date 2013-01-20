@@ -1,0 +1,164 @@
+@import "compass/css3/gradient";
+@import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
+@import "compass/css3/text-shadow";
+@import "compass/css3/images";
+@import "compass/css3/transition";
+@import "compass/css3/transform";
+
+*, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #eee;
+  color: #333;
+}
+
+a, a:visited, a:active {
+  color: #880000;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px dashed #990000;
+  &:hover {
+    color: #005500;
+    border-bottom: none;
+  }
+}
+
+.content {
+  width: 800px;
+  margin: 3em auto;
+  text-align: center;
+}
+
+.music-player {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  @include text-shadow(0 1px 0 #fff);
+  font-weight: bold;
+}
+
+.mp-player-control {
+  display: inline-block;
+  vertical-align: center;
+  background-color: #ddd;
+  @include box-shadow(
+    0 -2px 4px #555,
+    0 3px 2px #555,
+    3px 0 4px #555,
+    -3px 0 4px #555,
+    0 5px 1px #fff,
+    inset 0 -3px 10px #777
+  );
+  @include background(linear-gradient(top, #eee, #ccc, #aaa));
+  cursor: pointer;
+
+  &:hover {
+    @include background(linear-gradient(top, #ddd, #bbb, #999));
+  }
+
+  &:active {
+    @include background(linear-gradient(top, #777, #bbb, #ddd));
+    @include box-shadow(
+      0 -2px 4px #555,
+      0 3px 2px #555,
+      3px 0 4px #555,
+      -3px 0 4px #555,
+      0 5px 1px #fff,
+      inset 0 -3px 5px #777
+    );
+  }
+}
+
+@mixin circle($radius) {
+  $d: $radius*2;
+  width: $d;
+  height: $d;
+  line-height: $d;
+  @include border-radius($radius);
+}
+
+.mp-fbwd, .mp-ffwd {
+  @include circle(20px);
+}
+
+.mp-play {
+  @include circle(30px);
+  font-size: 30px;
+}
+
+.mp-player, .mp-bar {
+  position: absolute;
+}
+
+.mp-player {
+  left: 80px;
+}
+
+.mp-share {
+  text-align: right;
+  margin: 10px 15px 0 0;
+  cursor: pointer;
+}
+
+.mp-title {
+  font-weight: normal;
+  margin: 10px 0;
+  padding: 5px;
+  color: #b0e0e6;
+  background-color: #999;
+  @include text-shadow(0 1px 0 #555);
+  @include background(linear-gradient(top, #666, #999));
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #fff;
+}
+
+.mp-bar {
+  border: 1px solid #666;
+  @include border-radius(5px);
+  @include background(linear-gradient(top, #eee, #ccc, #aaa));
+  @include box-shadow(inset -2px -1px 5px #999, inset 2px -1px 5px #999, 0 -1px 4px #555, 0 1px 4px #555, 0 4px 0 #fff);
+  width: 320px;
+  height: 96px;
+  top: 30px;
+  background-color: #ddd;
+}
+
+.mp-progress-container {
+  position: relative;
+  background-color: #777;
+  @include background(linear-gradient(top, #555, #777));
+  @include border-radius(5px);
+  width: 290px;
+  height: 10px;
+  margin: 0 15px 0 15px;
+  border-bottom: 1px solid #fff;
+}
+
+.mp-progress-indicator {
+  position: absolute;
+  background-color: #999;
+  @include border-radius(4px);
+  @include background(linear-gradient(top, #ddd, #999));
+  width: 40px;
+  top: 2px;
+  left: 2px;
+  height: 6px;
+}
+
+.mp-progress-knob {
+  @include circle(8px);
+  background-color: #fff;
+  position: absolute;
+  border: #888 1px solid;
+  top: -4px;
+  left: 40px;
+  @include background(linear-gradient(top, #fff, #bbb));
+  @include box-shadow(0 1px 1px #555, inset 0 -1px 2px #888, inset 0 1px 2px #888);
+}
